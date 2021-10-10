@@ -1,0 +1,33 @@
+npm i -g @nestjs/cli
+nest generate module users/ npx @nestjs/cli generate module users
+ s um nao for o ou outro vai
+
+npm install prisma-D
+npx prisma init
+npx prisma migrate dev
+npx prisma db push
+npx prisma generate
+
+npm install @prisma/client
+npx prisma studio
+
+site para senha com @
+https://www.w3schools.com/tags/ref_urlencode.ASP
+
+npm install 
+npm install @types/bcrypt -D
+
+npm install class-transformer
+ npm i class-validator
+ npx prisma ele tras s comandos do codigo
+npx nest generate module auth
+npx nest generate service auth
+npx nest generate guard auth/simple
+npm install --save @nestjs/passport passport @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt
+npx nest generate controller auth
+
+
+se caso der ruim bcrypt, excluir node modules e instalar npm install
+verificar as dep no packagejson.
+
