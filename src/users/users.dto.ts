@@ -1,22 +1,38 @@
-import { IsNumber, IsString } from 'class-validator';
-
-export class CreateUserDto {
+import { IsDate, IsOptional, IsString, Length } from 'class-validator';
+export class CreateUsersDto {
   @IsString()
-  nome: string;
+  @Length(3, 30)
+  username: string;
+
+  @IsString()
+  @Length(8, 30)
+  senha: string;
+
+  @IsString()
+  @Length(2, 50)
+  displayName: string;
+
   @IsString()
   imagem: string;
+
   @IsString()
   bio: string;
+
+  @IsDate()
+  nascimento: Date;
+
   @IsString()
-  birth: string;
-  @IsNumber()
-  followers: number;
-  @IsNumber
-  following: number;
-  @IsNumber
-  create_on: number;
-  @IsNumber
-  updated_on: number;
-  @IsNumber
-  tweet: number;
+  createdAt: Date;
+
+  @IsString()
+  updatedAt: Date;
+
+  @IsOptional()
+  tweets:number[];
+
+  @IsOptional()
+  follows: number[];
+
+  @IsOptional()
+  likes: number[]; 
 }

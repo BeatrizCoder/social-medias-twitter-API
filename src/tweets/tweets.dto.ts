@@ -19,6 +19,4 @@ export class CreateTweetDto {
 
   @IsNotEmpty()
   userId: number;
-
 }
-Write to Aventuras do Valente

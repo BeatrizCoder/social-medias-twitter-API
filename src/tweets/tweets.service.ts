@@ -19,7 +19,7 @@ export class TweetsService {
         throw new NotFoundException(' does not exist a user with this name');
       }
     }
-    const tweets = await thi.db.tweet.findMany({
+    const tweets = await this.db.tweet.findMany({
       where: {},
       orderBy: { createdAt: 'desc' },
     });
